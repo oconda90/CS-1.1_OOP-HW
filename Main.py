@@ -9,7 +9,8 @@ class Hello:
         
     def greetings(self):
         """greeting user"""
-    print(f'Hello {self.name}, Welcome to our My Hero Academia fight simulator.')
+
+        print(f'Hello {self.name}, Welcome to our My Hero Academia fight simulator.')
 
     def UserStatus(self):
         
@@ -28,9 +29,6 @@ class Hello:
        
 
       
-"""
-OmarConda = Hello("omar conda", "none", 0)
-print (OmarConda.status)
-OmarConda.KnownUser()
-print (OmarConda.status)
-"""
+OmarConda = Hello("Omar","free")
+OmarConda.greetings()
+OmarConda.UserStatus()
