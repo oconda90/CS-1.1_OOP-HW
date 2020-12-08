@@ -19,6 +19,7 @@ class Hello:
         if life_status == "Busy":
             self.status = "Busy"
             print('We can play later')
+            
         elif life_status == "I'm Free":
             self.status = "I'm Free"
             print('Let us fight to the death, with anime charcters of course!')
