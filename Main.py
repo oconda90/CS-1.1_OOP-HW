@@ -1,6 +1,8 @@
+from student import Student
+from studentSelection import studentSelection
+from battleground import Battleground
 
-
-class Hello:
+class Main:
     """ Meeting the user """
 
     def __init__(self, name, status):
@@ -29,7 +31,13 @@ class Hello:
         
        
 
-      
-OmarConda = Hello("Omar","free")
+   
+OmarConda = Main("Omar","free")
 OmarConda.greetings()
 OmarConda.UserStatus()
+
+Omar = studentSelection('Omar', 'explosion')
+Omar.chooseStudent()
+
+Omar = Battleground('Mydoriya', 'bakugo')
+Omar.fight()

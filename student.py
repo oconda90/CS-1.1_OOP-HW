@@ -1,6 +1,6 @@
 import random
 
-class Player: 
+class Student: 
     def __init__(self, name, motto):
         mottos = ["omae", "wa", "mou", "shinderiu"]
         self.name = name
@@ -14,7 +14,8 @@ class Player:
     def intro(self):
         print(f"Narrator: Welcome {self.name}")
 
-
+    def __str__(self):
+        return self.name
 
 
 
