@@ -38,6 +38,8 @@ OmarConda.UserStatus()
 
 Omar = studentSelection('Omar', 'explosion')
 Omar.chooseStudent()
+Omar.chooseQuirk()
 
 Omar = Battleground('Mydoriya', 'bakugo')
 Omar.fight()
+

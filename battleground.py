@@ -13,3 +13,5 @@ class Battleground:
         winners = [self.character1, self.character2]
         winner = random.choice(winners)
         print(f"And the winner is {winner}")
+    
+    

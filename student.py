@@ -1,15 +1,14 @@
 import random
 
 class Student: 
-    def __init__(self, name, motto):
-        mottos = ["omae", "wa", "mou", "shinderiu"]
+    def __init__(self, name, superMove):
+        Supermove = ["SMAAASH!", "Howitzer Impact!", "Recipro Burst!", "Indiscriminate Shock 1.3 Million Volts!"]
         self.name = name
-        # self.origin = origin 
-        # self.ability = ability
-        self.motto = random.choice(mottos)
+        
+        self.superMove = random.choice(Supermove)
     
-    def sayMotto(self):
-        print(f"As {self.name} enters he says {self.motto}")
+    def saySupermove(self):
+        print(f"I {self.name} will soon finish you off with My {self.superMove}")
 
     def intro(self):
         print(f"Narrator: Welcome {self.name}")
