@@ -14,4 +14,6 @@ class Battleground:
         winner = random.choice(winners)
         print(f"And the winner is {winner}")
     
-    
+    def tapOut(self):
+        losers = [self.character1, self.character2]
+        loser = random.choice(losers)

@@ -1,9 +1,9 @@
 
 from battleground import Battleground
 from student import Student
-class studentSelection:
-    def __init__(self, name, quirk):
-        self.name = name
+class studentSelection(Student):
+    def __init__(self, quirk):
+        
         self.quirk = quirk
     def chooseStudent(self):
         players = ["Mydoriya", "Bakugo", "Todoroki", "Iida", "Uraraka", "Ashido", "Kamanari", "Sero"]
@@ -21,8 +21,11 @@ class studentSelection:
             self.battleground.fight()
     def chooseQuirk(self):
         Quirks = ["One for all", "Explosion", "half-cold half-hot", "Engine", "Zero Gravity", "Acid", "Electricity", "Tape Shot"]
-        Choose_Quirk = input("Choose your quirk! Dont be afriad to mix it Up")
+        Choose_Quirk = input("Choose your quirk! Dont be afriad to mix it Up! ")
         for quirk in Quirks:
             if Choose_Quirk == quirk:
-                print(f'{self.quirk} is now possessed by {self.name}')
+                print(f'{self.quirk} is now possessed by {self.studentName}')
 
+test = studentSelection('explosion')
+test.chooseStudent()
+test.chooseQuirk()
