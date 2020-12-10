@@ -2,24 +2,21 @@
 from battleground import Battleground
 from student import Student
 from welcome import Main
-class studentSelection(Battleground, Student):
+class studentSelection():
     def __init__(self, quirk, studentName):
-        self.studentName = studentName
         self.quirk = quirk
+        self.studentName = studentName
     def chooseStudent(self):
         players = ["Mydoriya", "Bakugo", "Todoroki", "Iida", "Uraraka", "Ashido", "Kamanari", "Sero"]
         player1_name = input("Choose your fighter from Class 1-A!")
         for player in players:
             if player1_name == player:
-                player2_name = input("Choose Another Character")
+                player2_name = input("Choose your opponent!")
                 break
             else:
                 print("This Student is with recovery girl, Try Again!")
                 break
-            player1 = Student(player1_name, "hi")
-            player2 = Student(player2_name, "hi")
-            self.battleground = Battleground(player1, player2)
-            self.battleground.fight()
+            
     def chooseQuirk(self):
         Quirks = ["One for all", "Explosion", "half-cold half-hot", "Engine", "Zero Gravity", "Acid", "Electricity", "Tape Shot"]
         Choose_Quirk = input("Choose your quirk! Dont be afriad to mix it Up! ")
@@ -32,8 +29,13 @@ test1= Main('Omar', 'N/A')
 test1.greetings()
 test1.userAvailability()
 test2= Student('Mydoriya', 'N/A')
-test2.saySupermove()
+test4=studentSelection('One for all', 'Mydoriya')
+print(test4.quirk)
+test4.chooseStudent()
 test2.intro()
+test4.chooseQuirk()
+print(test4.quirk)
+test2.saySupermove()
 test3 = Battleground('Mydoriya', 'Todoroki')
 test3.fight()
 test3.tapOut()
