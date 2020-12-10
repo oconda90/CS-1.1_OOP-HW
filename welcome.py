@@ -2,6 +2,7 @@
 
 class Main:
     """ Meeting the user """
+    #every other code line is public since its up to the user to pick and change attributes
     #avaiable is protected since maybe the sure doesn't want it to change.
     def __init__(self, name, available):
         self.name = name
@@ -29,16 +30,20 @@ class Main:
             
             else:
                 print('Please let us know your availability!')
-               
-       
 
-"""
+class Bye(Main):
+    def __init__(self, name):
+       super.__str__(name)
+    def Goodbye(self):
+        print(f'Goodbye Omar, was fun while it lasted!')
+
+
 OmarConda = Main("Omar","free")
 OmarConda.greetings()
-print(OmarConda.available)
+#print(OmarConda.available)
 OmarConda.userAvailability()
-print(OmarConda.available)
-"""
-
+#print(OmarConda.available)
+test = Bye('victor')
+test.Goodbye()
 
 

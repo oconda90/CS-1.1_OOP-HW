@@ -1,5 +1,5 @@
 import random
-
+from studentSelection import studentSelection
 class Student: 
     def __init__(self, studentName, superMove):
         Supermove = ["SMAAASH!", "Howitzer Impact!", "Recipro Burst!", "Indiscriminate Shock 1.3 Million Volts!"]
