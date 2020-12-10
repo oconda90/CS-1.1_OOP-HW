@@ -27,8 +27,13 @@ class studentSelection(Battleground, Student):
             if Choose_Quirk == quirk: 
                 self.quirk = Choose_Quirk
                 print(f'{self.quirk} is now possessed by {self.studentName}')
-"""
+
 test1= Main('Omar', 'N/A')
 test1.greetings()
 test1.userAvailability()
-"""
+test2= Student('Mydoriya', 'N/A')
+test2.saySupermove()
+test2.intro()
+test3 = Battleground('Mydoriya', 'Todoroki')
+test3.fight()
+test3.tapOut()

@@ -37,7 +37,7 @@ class Bye(Main):
     def Goodbye(self):
         print(f'Goodbye Omar, was fun while it lasted!')
 
-
+"""
 OmarConda = Main("Omar","free")
 OmarConda.greetings()
 #print(OmarConda.available)
@@ -45,5 +45,5 @@ OmarConda.userAvailability()
 #print(OmarConda.available)
 test = Bye('victor')
 test.Goodbye()
-
+"""
 
