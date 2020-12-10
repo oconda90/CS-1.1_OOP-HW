@@ -2,10 +2,10 @@
 
 class Main:
     """ Meeting the user """
-
+    #avaiable is protected since maybe the sure doesn't want it to change.
     def __init__(self, name, available):
         self.name = name
-        self.available = available
+        self._available = available
         
     def greetings(self):
         """greeting user"""
